@@ -1,5 +1,6 @@
 import React from "react";
 import logo from "../assets/img/logo_kasa_desktop.png";
+import Navigation from "./Navigation";
 
 const Banner = () => {
   return (
@@ -8,15 +9,8 @@ const Banner = () => {
         <img className="logo-banner" src={logo} alt="logo Kasa" />
       </div>
 
-      <div className="navigation-container">
-        <ul className="navigation">
-          <li>
-            <a href="/">Accueil</a>
-          </li>
-          <li>
-            <a href="/">A propos</a>
-          </li>
-        </ul>
+      <div className="navigation">
+        <Navigation />
       </div>
     </div>
   );

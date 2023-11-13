@@ -12,9 +12,10 @@ $color-1: #FF6060;
 
 body{
     font-family: $font-1;
+    
 }
 
-header{
+header,main{
     max-width: 90%;
     margin: 0 auto;
 }

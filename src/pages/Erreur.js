@@ -5,6 +5,7 @@ const Erreur = () => {
   return (
     <div>
       <Banner />
+      <p>page erreur 😒</p>
     </div>
   );
 };

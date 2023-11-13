@@ -1,13 +1,20 @@
-import Banner from "./components/Banner";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Accueil from "./pages/Accueil";
+import About from "./pages/About";
+import Erreur from "./pages/Erreur";
 
-function App() {
+import React from "react";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Banner />
-      </header>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Accueil />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/*" element={<Erreur />} />
+      </Routes>
+    </BrowserRouter>
   );
-}
+};
 
 export default App;
