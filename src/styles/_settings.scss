@@ -1,0 +1,20 @@
+@font-face{
+
+    font-family: "font-1";
+    src:url(../assets/fonts/Montserrat-Medium.ttf);
+}
+
+$font-1:"font-1";
+
+$color-1: #FF6060;
+
+
+
+body{
+    font-family: $font-1;
+}
+
+header{
+    max-width: 90%;
+    margin: 0 auto;
+}

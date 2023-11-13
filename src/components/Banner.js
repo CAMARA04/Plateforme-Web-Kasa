@@ -1,17 +1,22 @@
 import React from "react";
-import logo from "../assets/logo_kasa_desktop.png";
-import "../styles/Banner.scss";
+import logo from "../assets/img/logo_kasa_desktop.png";
 
 const Banner = () => {
   return (
     <div className="banner">
       <div className="logo-container">
-        <img src={logo} alt="logo Kasa" />
+        <img className="logo-banner" src={logo} alt="logo Kasa" />
       </div>
 
-      <div className="navigation">
-        <a href="">Accueil</a>
-        <a href="">A propos</a>
+      <div className="navigation-container">
+        <ul className="navigation">
+          <li>
+            <a href="/">Accueil</a>
+          </li>
+          <li>
+            <a href="/">A propos</a>
+          </li>
+        </ul>
       </div>
     </div>
   );
