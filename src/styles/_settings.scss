@@ -7,15 +7,29 @@
 $font-1:"font-1";
 
 $color-1: #FF6060;
+$color-2: #F6F6F6;
+$color-3: #000000;
 
-
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
     font-family: $font-1;
     
 }
 
-header,main{
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+header{
     max-width: 90%;
-    margin: 0 auto;
+    margin: auto;
+    width: 100%;
+    margin-top: 25px;
+    
 }

@@ -1,8 +1,19 @@
-
+.page-about{
+   display: flex;
+   flex-direction: column;
+   gap:40px;
+}
 
 
 .paysage-about{
-   width: 100%; 
-   border-radius: 20px;
+   max-width: 90%;
+   display: block;
+   margin: auto;
+   border-radius:25px ;
 }
+
+
+
+
+
 
