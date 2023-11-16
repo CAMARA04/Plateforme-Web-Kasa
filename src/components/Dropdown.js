@@ -6,7 +6,6 @@ const Dropdown = () => {
 
   // Pour basculer l'état d'ouverture d'un élément
   const toggleDropdown = (index, event) => {
-    // Vérifier si l'élément sur lequel vous avez cliqué est la flèche
     if (!event.target.classList.contains("arrow-icon")) {
       return;
     }
