@@ -1,6 +1,7 @@
-import PhotoPaysage from "../assets/img/Paysage-montagne.webp";
+import PhotoPaysage from "../../assets/img/Paysage-montagne.webp";
 import React from "react";
-import Dropdown from "../components/Dropdown";
+import "../About/About.scss";
+import Dropdown from "../../components/Dropdown";
 
 const About = () => {
   return (

@@ -1,15 +1,14 @@
 
-footer{
+$color-1: #FF6060;
+$color-2: #F6F6F6;
+$color-3: #000000;
 
+footer{
     width: 100%;
     box-sizing: border-box;
-    
- 
-   
 }
 
-
-.footer{
+footer{
     background-color: $color-3;
     display: flex;
     flex-direction: column;
@@ -20,15 +19,8 @@ footer{
     height: 210px;
     padding: 10px;
     
-   
 }
 
 .logo-kasa-footer{
-    width: 120px;
-    
+    width: 120px;    
 }
-
-// .copyright{
-//     width: 500px;
-// }
-

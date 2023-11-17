@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "../Navigation/Navigation.scss";
 
 const Navigation = () => {
   return (
@@ -11,7 +12,7 @@ const Navigation = () => {
         to="/About"
         className={(nav) => (nav.isActive ? "nav-active" : "")}
       >
-        A propos
+        A Propos
       </NavLink>
     </nav>
   );
