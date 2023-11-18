@@ -1,16 +1,15 @@
-import PhotoPaysage from "../../assets/img/Paysage-montagne.webp";
+import bannerImageAbout from "../../assets/img/Paysage-montagne.webp";
 import React from "react";
 import "../About/About.scss";
 import Dropdown from "../../components/Dropdown";
+import Banner from "../../components/Banner/Banner";
+import "../../components/Banner/Banner.scss";
 
 const About = () => {
   return (
     <main>
-      <img
-        src={PhotoPaysage}
-        alt="Paysage montagne"
-        className="paysage-about"
-      />
+      <Banner imageUrl={bannerImageAbout} imageAlt="Paysage montage" title="" />
+
       <div className="liste-about">
         <Dropdown />
       </div>

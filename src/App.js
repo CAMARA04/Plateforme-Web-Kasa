@@ -18,7 +18,10 @@ const App = () => {
           {/* <Route path="/*" element={<Erreur />} /> */}
         </Routes>
       </div>
-      <Footer />
+
+      <footer>
+        <Footer />
+      </footer>
     </BrowserRouter>
   );
 };
