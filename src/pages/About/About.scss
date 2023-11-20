@@ -1,7 +1,9 @@
+
+
 main{
     display: flex;
     flex-direction: column;
-    gap:60px;
+    gap:30px;
  }
  
  
@@ -12,6 +14,7 @@ main{
     border-radius:25px ;
  }
 
+
  footer{
    margin: 0;
    padding: 0;
@@ -20,3 +23,14 @@ main{
  .banner{
    width: 90%;
  }
+
+ .collapse-about{
+
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap:30px ;
+  margin: 0 auto;
+ }
+
+
