@@ -1,6 +1,9 @@
+//Importation Bibliotheque REACT
 import React from "react";
 
+//Définition du composant
 const Banner = (props) => {
+  //Rendu du composant
   return (
     <div className="banner">
       <img src={props.imageUrl} alt={props.imageAlt} />

@@ -1,37 +1,62 @@
-$color-1: #FF6060;
-$color-2: #F6F6F6;
-$color-3: #000000;
+// $color-1: #FF6060;
+// $color-2: #F6F6F6;
+// $color-3: #000000;
+@import "../../styles/settings.scss";
 
 
+.collapse-item {
+  display: flex;
+  flex-direction: column;
+    .item-header {
+      background-color: $color-1;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 5px; 
+      padding: 10px 20px 10px 15px;
+      color: white;
+      font-size: 24px;
+       z-index: 2;
+    }
+  
+    .arrow-icon {
+      transition: transform 0.5s ease;
+      cursor: pointer; 
+  
+      &.open {
+        transform: rotate(-180deg);
+      }
+    }
 
-.item-header{
- background-color: $color-1;
- display: flex;
- justify-content: space-between;
- border-radius:5px; 
- padding: 10px 20px 10px 15px;
- color: white;
- font-size: 24px;
+    .content {
+      font-size: 18px;
+      color: #FF6060;
+      background-color: #F6F6F6;
+      border-radius: 0px 0px 10px 10px;
+      padding: 20px;
+      max-height: 350px;
+      z-index: 1;
+    overflow: hidden;
+      animation:textanimate 1s both;
+     
 }
 
-.arrow-icon {
-    transition: transform 0.5s ease;
-    cursor: pointer; // Ajoute le curseur pointer
+@keyframes textanimate{
+  0%{
+    opacity: 0;
+    transform: translateY(-50px);
   
-    &.open {
-      transform: rotate(-180deg);
-    }
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
   }
 
-  .content{
-    
-    font-size: 18px;
-    color:  #FF6060;
-    background-color:#F6F6F6;
-    border-radius: 0px 0px 10px 10px;
-    padding: 10px;
-    
 }
+
+}
+  
+
+
 
 
 
