@@ -1,0 +1,16 @@
+.banner img {
+    
+     filter: brightness(80%) contrast(120%);
+   
+  }
+
+  .section-logements{
+   display: grid;
+   grid-template-columns: repeat(3,1fr);
+   gap:25px ;
+   background-color: #F6F6F6;
+   padding: 30px;
+
+  }
+
+  

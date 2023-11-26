@@ -12,10 +12,12 @@ $color-3: #000000;
 .navigation-container{
     display: flex ;
     gap: 40px;
-    font-size: 24px;
-    
+    font-size: 24px; 
 }
 
+.navigation-container a:hover{
+  transform: scale(1.2);
+}
 .nav-active {
     position: relative;
     color: $color-1;

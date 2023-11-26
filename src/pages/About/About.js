@@ -33,7 +33,7 @@ const About = () => {
 
   // Rendu du composant About
   return (
-    <main>
+    <main className="main-about">
       <Banner
         imageUrl={bannerImageAbout}
         imageAlt="Paysage montagne"
