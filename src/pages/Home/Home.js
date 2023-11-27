@@ -11,12 +11,10 @@ const Home = () => {
 
   useEffect(() => {
     setLogements(logementsData);
-
-    console.log("Logements Data:", logementsData);
   }, []);
 
   return (
-    <main>
+    <main className="page-accueil">
       <section className="banner-home">
         <Banner
           imageUrl={bannerImageHome}

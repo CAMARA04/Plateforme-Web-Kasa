@@ -1,16 +1,31 @@
+.page-accueil{
+   display: flex;
+   flex-direction: column;
+   gap: 50px;
+}
 .banner img {
     
      filter: brightness(80%) contrast(120%);
-   
   }
 
   .section-logements{
    display: grid;
    grid-template-columns: repeat(3,1fr);
-   gap:25px ;
+   gap:45px ;
    background-color: #F6F6F6;
-   padding: 30px;
+   padding: 45px;
+   width: 90%;
+   margin: 0 auto;
+   border-radius: 10px;
 
   }
 
+  .card{
+
+   height: 340px;
+   width: auto;
   
+}
+
+
+ 
