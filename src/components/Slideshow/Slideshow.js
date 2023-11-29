@@ -1,5 +1,8 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import "./Slideshow.scss";
+import iconePreview from "../../assets/icones/arrow_back_ios-24px 1.png";
+import iconeForward from "../../assets/icones/arrow_forward_ios-24px 1.png";
 
 const Slideshow = ({ images }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -15,13 +18,20 @@ const Slideshow = ({ images }) => {
   };
 
   return (
-    <div className="slideshow">
-      <button onClick={previousImage}>Previous</button>
+    <div className="slideshow-container">
       <img
         src={images[currentImageIndex]}
         alt={`Slideshow ${currentImageIndex}`}
+        className="caroussel-pictures"
       />
-      <button onClick={nextImage}>Next</button>
+      <div className="overlay-icones">
+        <button className="previous-button" onClick={previousImage}>
+          <img src={iconePreview} alt="Preview" />
+        </button>
+        <button onClick={nextImage}>
+          <img className="next-button" src={iconeForward} alt="Next" />
+        </button>
+      </div>
     </div>
   );
 };

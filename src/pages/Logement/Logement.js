@@ -14,7 +14,7 @@ const Logement = () => {
 
   return (
     <div className="logement">
-      <h2>{logement.title}</h2>
+      {/* <h2>{logement.title}</h2> */}
 
       <Slideshow images={logement.pictures} />
     </div>

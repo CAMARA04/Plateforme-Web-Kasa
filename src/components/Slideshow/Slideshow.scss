@@ -1,0 +1,54 @@
+.slideshow-container{
+    position: relative;
+    // display: inline-block;
+    width: 100%;
+    margin:auto ;
+}
+
+.slideshow-image {
+    max-width: 100%; 
+  }
+
+  .caroussel-pictures{
+
+    border-radius: 25px;
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+    
+  }
+
+  .overlay-icones {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    pointer-events: none;  
+    
+  }
+
+  .overlay-icones button{
+    background: none;
+  border: none;
+  cursor: pointer;
+  pointer-events: auto;
+
+  }
+
+  .overlay button img {
+    width: 80px;
+    height: 80px;
+  }
+
+
+
+
+
+
+
+
+
