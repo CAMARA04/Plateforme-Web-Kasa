@@ -5,6 +5,7 @@ import "../../pages/Home/Home.scss";
 import "../../pages/Home/Home.scss";
 import logementsData from "../../datas/logements.json";
 import Card from "../../components/LocationCard/Card";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [logements, setLogements] = useState([]);
@@ -25,11 +26,10 @@ const Home = () => {
 
       <section className="section-logements">
         {logements.map((logement) => (
-          <Card
-            key={logement.id}
-            title={logement.title}
-            coverPhoto={logement.cover}
-          />
+          <Link key={logement.id} to={`/logement/${logement.id}`}>
+            {/* Utilisez le composant Link pour rediriger vers la page Logement */}
+            <Card title={logement.title} coverPhoto={logement.cover} />
+          </Link>
         ))}
       </section>
     </main>

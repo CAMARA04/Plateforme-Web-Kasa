@@ -4,6 +4,10 @@ header{
     align-items: center;
     width: 100%;
     padding: 20px 0;
+    @media screen and (max-width:768px) {
+        padding: 10px 0;
+        
+    }
    .logo-container{
        width: 15%;
        img{

@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import React from "react";
 import "./app.scss";
+import Logement from "./pages/Logement/Logement";
 const App = () => {
   return (
     <BrowserRouter>
@@ -16,6 +17,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/*" element={<Erreur />} />
+          <Route path="/logement/:id" element={<Logement />} />
         </Routes>
       </div>
 
