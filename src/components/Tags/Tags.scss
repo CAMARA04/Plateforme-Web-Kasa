@@ -1,0 +1,21 @@
+@import "../../styles/settings.scss";
+
+
+.tags{
+    display: flex;
+    gap: 15px;
+}
+
+.tag{
+ display: flex;
+ background-color:$color-1 ;
+ border-radius: 10px;
+ width: 115px;
+ height: 25px;
+ color: white;
+ text-align: center;
+ font-size: 14px;
+ justify-content: center;
+ align-items: center;
+ 
+}
