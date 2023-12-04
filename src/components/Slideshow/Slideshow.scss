@@ -32,7 +32,7 @@
   }
 
   .overlay-icones button{
-    background: none;
+  background: none;
   border: none;
   cursor: pointer;
   pointer-events: auto;
@@ -42,6 +42,17 @@
   .overlay button img {
     width: 80px;
     height: 80px;
+  }
+
+  .slide-number{
+    color: white;
+    font-size: 16px;
+    margin-bottom: 10px;
+    position: absolute; 
+    bottom: 10px; 
+    left: 50%; 
+    transform: translateX(-50%);
+
   }
 
 

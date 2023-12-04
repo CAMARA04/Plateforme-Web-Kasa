@@ -17,6 +17,9 @@ const Slideshow = ({ images }) => {
     );
   };
 
+  // Calcul de la numérotation
+  const slideNumber = `${currentImageIndex + 1}/${images.length}`;
+
   return (
     <div className="slideshow-container">
       <img
@@ -28,6 +31,7 @@ const Slideshow = ({ images }) => {
         <button className="previous-button" onClick={previousImage}>
           <img src={iconePreview} alt="Preview" />
         </button>
+        <div className="slide-number">{slideNumber}</div>
         <button onClick={nextImage}>
           <img className="next-button" src={iconeForward} alt="Next" />
         </button>
