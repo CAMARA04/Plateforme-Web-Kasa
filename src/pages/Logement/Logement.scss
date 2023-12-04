@@ -3,6 +3,9 @@
 .logement{
     width: 90%;
     margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
 }
 
 .first-line{
@@ -14,3 +17,40 @@
     display: flex;
     justify-content: space-between;
 }
+
+.infos_logement{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.title {
+    color: $color-1;
+    
+}
+
+.title h2 {
+    font-weight: 500;
+    font-size: 36px;
+}
+
+.title p{
+    font-size: 18px;
+}
+
+.collapses-logement{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+.content{
+    height: 220px;
+}
+
+.content ul{
+    list-style: none;
+    display:flex ;
+    flex-direction: column;
+    gap: 5px;
+}
+

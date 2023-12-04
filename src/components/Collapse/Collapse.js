@@ -26,8 +26,21 @@ const Collapse = ({ title, content }) => {
           onClick={toggleCollapse}
         />
       </div>
-      {/* <div className="content">{content}</div> */}
-      {isOpen && <div className="content">{content}</div>}
+
+      {isOpen && (
+        <div className="content">
+          {/* Modification ici pour afficher en colonne */}
+          {Array.isArray(content) ? (
+            <ul>
+              {content.map((item, index) => (
+                <li key={index}>{item}</li>
+              ))}
+            </ul>
+          ) : (
+            content
+          )}
+        </div>
+      )}
     </div>
   );
 };
