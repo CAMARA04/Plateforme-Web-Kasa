@@ -22,15 +22,34 @@
     font-weight: 700;
     font-size: 200px;
     
-    
-}
+    @media screen and (max-width:768px) {
+  
+       font-size: 80px;
+       
+  }
+    }
+
 .texte-erreur{
     font-size: 36px;
-}
+    @media screen and (max-width:768px) {
+       font-size: 18px;
+       width: 80%;
+       text-align: center;
+   
+  }
+    }
+
 .back-home{
     font-size: 18px;
     margin-bottom: 80px;
    
+
+    @media screen and (max-width:768px) {
+  
+        font-size: 14px;
+        
+    
+   }
 }
 
 .back-home a:visited{

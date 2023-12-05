@@ -24,30 +24,31 @@ const Logement = () => {
         <Slideshow images={logement.pictures} />
       </section>
       <section className="infos_logement">
-        <div className="first-line">
+        <div className="left-bloc">
           <div className="title">
             <h2>{logement.title}</h2>
             <p>{logement.location}</p>
           </div>
-          <Host name={logement.host.name} picture={logement.host.picture} />
+          <Tags tags={logement.tags} className="tags" />
         </div>
-        <div className="second-line">
-          <Tags tags={logement.tags} />
+        <div className="right-bloc">
+          <Host name={logement.host.name} picture={logement.host.picture} />
           <Rating rating={logement.rating} />
         </div>
+      </section>
 
-        <div className="collapses-logement">
-          <Collapse
-            title="Description"
-            content={logement.description}
-            className="description-logement"
-          />
-          <Collapse
-            title="Équipement"
-            content={logement.equipments}
-            className="equipement-logement"
-          />
-        </div>
+      <section className="collapses-logement">
+        {" "}
+        <Collapse
+          title="Description"
+          content={logement.description}
+          className="description-logement"
+        />
+        <Collapse
+          title="Équipement"
+          content={logement.equipments}
+          className="equipement-logement"
+        />
       </section>
     </main>
   );

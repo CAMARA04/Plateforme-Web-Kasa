@@ -1,11 +1,13 @@
-
-
 .main-about{
     display: flex;
     flex-direction: column;
     gap:30px;
+
+    @media screen and (max-width:768px) {
+    
+      gap: 18px;
+  }
  }
- 
  
  .paysage-about{
     width: 90%;
@@ -24,8 +26,6 @@
    width: 90%;
  }
 
-
-
  .collapse-about{
 
   width: 80%;
@@ -33,6 +33,12 @@
   flex-direction: column;
   gap:30px ;
   margin: 0 auto;
+
+  @media screen and (max-width:768px) {
+    
+    gap: 18px;
+    width: 90%;
+}
  }
 
 

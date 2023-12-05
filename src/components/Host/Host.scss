@@ -1,4 +1,4 @@
-
+@import "../../styles/settings.scss";
 
 .owner-info{
     display: flex;  
@@ -11,8 +11,23 @@
     height: 50px;
     border-radius: 50%;
     margin-right: 10px;
+
+    @media screen and (max-width:768px) {
+  
+        width: 32px;
+        height: 32px;
+        
+  }
 }
 
 .owner-name{
     text-align: end;
+    color: $color-1;
+    font-size: 18px;
+
+    @media screen and (max-width:768px) {
+    
+        font-size: 12px;
+}
+
 }

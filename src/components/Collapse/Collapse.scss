@@ -7,6 +7,8 @@
 .collapse-item {
   display: flex;
   flex-direction: column;
+
+
     .item-header {
       background-color: $color-1;
       display: flex;
@@ -15,8 +17,18 @@
       padding: 10px 20px 10px 15px;
       color: white;
       font-size: 24px;
-       z-index: 2;
+      z-index: 2;
+      align-items: center;
+
+      @media screen and (max-width:768px) {
+  
+        height: 35px;
+  }
+      
     }
+
+   
+  
   
     .arrow-icon {
       transition: transform 0.5s ease;
@@ -25,6 +37,11 @@
       &.open {
         transform: rotate(-180deg);
       }
+
+      @media screen and (max-width:768px) {
+  
+        height: 26px;
+  }
     }
 
     .content {
@@ -35,8 +52,14 @@
       padding: 20px;
       max-height: 350px;
       z-index: 1;
-    overflow: hidden;
+      overflow: hidden;
       animation:textanimate 1s both;
+      
+      @media screen and (max-width:768px) {
+  
+       font-size: 12px;
+       height: auto;
+  }
      
 }
 

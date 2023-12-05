@@ -6,42 +6,118 @@
     display: flex;
     flex-direction: column;
     gap: 30px;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+          
+      }
 }
 
-.first-line{
-    display: flex;
-    justify-content: space-between;
-}
-
-.second-line{
-    display: flex;
-    justify-content: space-between;
-}
 
 .infos_logement{
     display: flex;
+    justify-content: space-between;
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: column; 
+        gap: 10px;  
+     }
+}
+
+.right-bloc{
+    display: flex;
     flex-direction: column;
-    gap: 30px;
+    align-items: end;
+    width: 30%;
+    gap: 20px;
+
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction:row-reverse;
+        justify-content: space-between; 
+        width: 100%;
+        align-items: center; 
+     }
+}
+
+.left-bloc{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 70%;
+
+    @media screen and (max-width:768px) {
+        width: 100%;
+          
+      }  
 }
 
 .title {
+    display: flex;
+    flex-direction:column ;
+    gap: 5px;
     color: $color-1;
+    
     
 }
 
 .title h2 {
     font-weight: 500;
     font-size: 36px;
+    width: 100%;
+
+    @media screen and (max-width:768px) {
+        font-size: 18px;
+        width: 100%;
+          
+      }
 }
 
 .title p{
     font-size: 18px;
 }
 
+.tags{
+    @media screen and (max-width:768px) {
+       height: 25px;
+         
+     }
+}
+
+.tag{
+    width: 170px;
+    padding: 5px 10px;
+
+    @media screen and (max-width:768px) {
+       font-size: 10px;
+       width: 84px;
+       height: 18px;
+       padding: 8px 15px;
+          
+      }
+    
+}
 .collapses-logement{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 25px;
+    gap: 100px;
+    width: 100%;
+  
+    @media screen and (max-width:768px) {
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+         
+     }
+}
+.item-title{
+    font-size: 18px;
+    @media screen and (max-width:768px) {
+  
+        font-size: 13px;
+  }
 }
 .content{
     height: 220px;
@@ -53,4 +129,6 @@
     flex-direction: column;
     gap: 5px;
 }
+
+
 

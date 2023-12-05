@@ -29,7 +29,6 @@ const Collapse = ({ title, content }) => {
 
       {isOpen && (
         <div className="content">
-          {/* Modification ici pour afficher en colonne */}
           {Array.isArray(content) ? (
             <ul>
               {content.map((item, index) => (

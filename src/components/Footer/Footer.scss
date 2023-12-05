@@ -21,5 +21,14 @@ footer{
 }
 
 .logo-kasa-footer{
-    width: 120px;    
+    width: 120px; 
+}
+
+.copyright{
+    @media screen and (max-width:768px) {
+       width: 130px;
+       height: auto;
+   
+       
+       }
 }
