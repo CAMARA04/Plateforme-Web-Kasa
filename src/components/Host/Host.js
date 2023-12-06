@@ -7,10 +7,10 @@ const Host = ({ name, picture }) => {
 
   return (
     <div className="owner-info">
-      <p className="owner-name">
+      <div className="owner-name">
         <p>{firstName}</p>
         <p>{lastName}</p>
-      </p>
+      </div>
       <img src={picture} alt={name} className="owner-picture" />
     </div>
   );

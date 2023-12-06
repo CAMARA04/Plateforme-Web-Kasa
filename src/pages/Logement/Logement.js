@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { Navigate, useParams } from "react-router-dom";
 import Slideshow from "../../components/Slideshow/Slideshow";
 import Tags from "../../components/Tags/Tags";
 import Host from "../../components/Host/Host";
@@ -15,7 +15,7 @@ const Logement = () => {
   const logement = logementsData.find((logement) => logement.id === id);
 
   if (!logement) {
-    return <div>Logement non trouvé</div>;
+    return <Navigate to="/erreur" />;
   }
 
   return (
@@ -33,7 +33,7 @@ const Logement = () => {
         </div>
         <div className="right-bloc">
           <Host name={logement.host.name} picture={logement.host.picture} />
-          <Rating rating={logement.rating} />
+          <Rating rating={parseFloat(logement.rating)} />
         </div>
       </section>
 
@@ -52,19 +52,6 @@ const Logement = () => {
       </section>
     </main>
   );
-};
-
-Logement.propTypes = {
-  title: PropTypes.string.isRequired,
-  location: PropTypes.string.isRequired,
-  coverPhoto: PropTypes.string.isRequired,
-  pictures: PropTypes.arrayOf(PropTypes.string).isRequired,
-  tags: PropTypes.arrayOf(PropTypes.string).isRequired,
-  host: PropTypes.shape({
-    name: PropTypes.string.isRequired,
-    picture: PropTypes.string.isRequired,
-  }).isRequired,
-  equipments: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default Logement;

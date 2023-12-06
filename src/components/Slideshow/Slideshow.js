@@ -27,6 +27,7 @@ const Slideshow = ({ images }) => {
         alt={`Slideshow ${currentImageIndex}`}
         className="caroussel-pictures"
       />
+
       <div className="overlay-icones">
         <button className="previous-button" onClick={previousImage}>
           <img src={iconePreview} alt="Preview" className="slideshow-button" />

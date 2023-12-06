@@ -2,10 +2,13 @@
     position: relative;
     width: 100%;
     margin:auto ;
+    
 }
 
 .slideshow-image {
     max-width: 100%; 
+    
+   
   }
 
   .caroussel-pictures{
@@ -13,10 +16,11 @@
     height: 415px;
     width: 100%;
     object-fit: cover;
+    transition: 0.9s ease-in-out;
+  
     @media screen and (max-width:768px) {
       height: 255px;
-      width: 100%;
-        
+      width: 100%; 
     }  
   }
 
@@ -30,9 +34,6 @@
     align-items: center;
     justify-content: space-between;
     pointer-events: none;  
-
-   
-    
   }
 
   .overlay-icones button{
@@ -60,12 +61,13 @@
   }
 
  .slideshow-button{
-
+ 
   @media screen and (max-width:768px) {
     height: 32px;
     width: 32px;  
   }
  }
+
 
 
 

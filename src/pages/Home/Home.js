@@ -27,7 +27,6 @@ const Home = () => {
       <section className="section-logements">
         {logements.map((logement) => (
           <Link key={logement.id} to={`/logement/${logement.id}`}>
-            {/* Utilisez le composant Link pour rediriger vers la page Logement */}
             <Card title={logement.title} coverPhoto={logement.cover} />
           </Link>
         ))}
