@@ -22,11 +22,16 @@ const Slideshow = ({ images }) => {
 
   return (
     <div className="slideshow-container">
-      <img
-        src={images[currentImageIndex]}
-        alt={`Slideshow ${currentImageIndex}`}
-        className="caroussel-pictures"
-      />
+      {images.map((image, index) => (
+        <img
+          key={index}
+          src={image}
+          alt={`Slideshow ${index}`}
+          className={`caroussel-pictures ${
+            index === currentImageIndex ? "visible" : "hidden"
+          }`}
+        />
+      ))}
 
       <div className="overlay-icones">
         <button className="previous-button" onClick={previousImage}>
