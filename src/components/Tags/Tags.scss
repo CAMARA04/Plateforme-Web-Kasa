@@ -1,11 +1,8 @@
 @import "../../styles/settings.scss";
 
-
 .tags{
     display: flex;
-    gap: 15px;
-   
-    
+    gap: 15px;    
 }
 
 .tag{
@@ -19,8 +16,5 @@
  font-size: 14px;
  justify-content: center;
  align-items: center;
-
-
- 
  
 }

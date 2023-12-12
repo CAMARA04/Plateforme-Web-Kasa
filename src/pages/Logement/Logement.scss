@@ -19,14 +19,13 @@
     height: 100%;
 }
 
-
 .infos_logement{
     display: flex;
     justify-content: space-between;
     @media screen and (max-width:768px) {
-        display: flex;
-        flex-direction: column; 
-        gap: 10px;  
+    display: flex;
+    flex-direction: column; 
+    gap: 10px;  
      }
 }
 
@@ -53,8 +52,7 @@
     width: 70%;
 
     @media screen and (max-width:768px) {
-        width: 100%;
-          
+        width: 100%;   
       }  
 }
 
@@ -72,8 +70,7 @@
 
     @media screen and (max-width:768px) {
         font-size: 18px;
-        width: 100%;
-          
+        width: 100%;    
       }
 }
 
@@ -83,9 +80,7 @@
 
 .tags{
     @media screen and (max-width:768px) {
-       height: 25px;
-       
-         
+       height: 25px;     
      }
 }
 
@@ -99,8 +94,7 @@
        height: 18px;
        padding: 8px 15px;
           
-      }
-    
+      }   
 }
 .collapses-logement{
     display: grid;
