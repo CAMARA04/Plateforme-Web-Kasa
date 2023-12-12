@@ -6,6 +6,8 @@ import Host from "../../components/Host/Host";
 import Rating from "../../components/Rating/Rating";
 import Collapse from "../../components/Collapse/Collapse";
 import logementsData from "../../datas/logements.json";
+import ScrollToTop from "../../components/ScrollToTop/ScrollToTop";
+
 import "./Logement.scss";
 
 const Logement = () => {
@@ -18,6 +20,7 @@ const Logement = () => {
 
   return (
     <main className="logement">
+      <ScrollToTop />
       <section className="carrousel">
         <Slideshow images={logement.pictures} />
       </section>
