@@ -1,12 +1,11 @@
-// $color-1: #FF6060;
-// $color-2: #F6F6F6;
-// $color-3: #000000;
 @import "../../styles/settings.scss";
 
 
 .collapse-item {
   display: flex;
   flex-direction: column;
+  
+
 
     .item-header {
       background-color: $color-1;
@@ -45,7 +44,7 @@
       background-color: #F6F6F6;
       border-radius: 0px 0px 10px 10px;
       padding: 20px;
-      height:auto;
+      height:100%;
       z-index: 1;
       overflow: hidden;
       animation:textanimate 1s both;
@@ -69,8 +68,9 @@
   }
 
 }
-
 }
+
+
   
 
 

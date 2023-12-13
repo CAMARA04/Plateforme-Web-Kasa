@@ -27,19 +27,7 @@ const Collapse = ({ title, content }) => {
         />
       </div>
 
-      {isOpen && (
-        <div className="content">
-          {Array.isArray(content) ? (
-            <ul>
-              {content.map((item, index) => (
-                <li key={index}>{item}</li>
-              ))}
-            </ul>
-          ) : (
-            content
-          )}
-        </div>
-      )}
+      {isOpen && <div className="content">{content}</div>}
     </div>
   );
 };
