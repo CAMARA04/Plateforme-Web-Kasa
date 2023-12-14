@@ -32,16 +32,27 @@ const Slideshow = ({ images }) => {
           }`}
         />
       ))}
+      {images.length > 1 && (
+        <div className="overlay-icones">
+          <button className="previous-button" onClick={previousImage}>
+            <img
+              src={iconePreview}
+              alt="Preview"
+              className="slideshow-button"
+            />
+          </button>
+          <div className="slide-number">{slideNumber}</div>
+          <button onClick={nextImage}>
+            <img className="slideshow-button" src={iconeForward} alt="Next" />
+          </button>
+        </div>
+      )}
 
-      <div className="overlay-icones">
-        <button className="previous-button" onClick={previousImage}>
-          <img src={iconePreview} alt="Preview" className="slideshow-button" />
-        </button>
-        <div className="slide-number">{slideNumber}</div>
-        <button onClick={nextImage}>
-          <img className="slideshow-button" src={iconeForward} alt="Next" />
-        </button>
-      </div>
+      {images.length === 1 && (
+        <div className="single-image-overlay">
+          <div className="slide-number">{slideNumber}</div>
+        </div>
+      )}
     </div>
   );
 };
